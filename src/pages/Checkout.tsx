@@ -7,15 +7,17 @@ import { CiDeliveryTruck } from "react-icons/ci";
 const Checkout = () => {
   const { cartItems } = useShopContext();
   return (
-    <div className="flex flex-col md:flex-row gap-5 p-2">
-      <div className=" md:w-3/5">
+    <div className="flex flex-col md:flex-row gap-5 p-2 ">
+      <div className=" md:w-3/5  ">
         <h1 className="text-3xl">Cart</h1>
-        {cartItems.map(item => (
-          <CartItem key={item.id} {...item} />
-        ))}
+        {cartItems && cartItems.length > 0 ? (
+          cartItems.map(item => <CartItem key={item.id} {...item} />)
+        ) : (
+          <p className="text-2xl px-40 py-40">no items yet please shop😦</p>
+        )}
       </div>
 
-      <div className="  flex flex-col items-center md:w-2/5 justify-center border-4 rounded-2xl border-gray-300 gap-4 ">
+      <div className="  flex flex-col items-center md:w-2/5 justify-center border-4 rounded-2xl border-gray-300 gap-4  ">
         <span className="text-4xl">
           total: $
           {cartItems.reduce((total, cartItem) => {
