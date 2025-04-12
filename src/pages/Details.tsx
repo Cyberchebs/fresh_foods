@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Items from "../constants/data";
 import { useShopContext } from "../context/ShopContext";
@@ -15,12 +15,8 @@ type Item = {
 
 const Details = () => {
   const { id } = useParams();
-  const {
-    increaseCartQuantity,
-    getItemQuantity,
-    decreaseCartQuantity,
-    removeFromCart,
-  } = useShopContext();
+  const { increaseCartQuantity, getItemQuantity, decreaseCartQuantity } =
+    useShopContext();
 
   const quantity = getItemQuantity(Number(id));
 

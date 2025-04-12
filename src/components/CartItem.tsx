@@ -1,4 +1,3 @@
-import React from "react";
 import Items from "../constants/data";
 import { useShopContext } from "../context/ShopContext";
 

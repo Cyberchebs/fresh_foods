@@ -1,5 +1,3 @@
-import React from "react";
-
 const Banner = () => {
   return (
     <div className=" relative w-full h-[100vh] banner-bg backdrop-brightness-50">

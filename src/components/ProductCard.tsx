@@ -20,14 +20,16 @@ const ProductCard: React.FC<Props> = ({ item }) => {
   return (
     <Link to={`/details/${item.id}`}>
       <div
-        className="flex flex-col items-start p-5  lg:w-[300px] md:w-auto md:min-w-[220px] w-[320px] h-[400px]  justify-evenly  shadow-gray-400 shadow-[0_10px_30px_rgba(0,0,0,0.2)]
+        className="flex flex-col cusor-pointer items-start p-5  lg:w-[300px] md:w-auto md:min-w-[220px] w-[320px] h-[400px]  justify-evenly  shadow-gray-400 shadow-[0_10px_30px_rgba(0,0,0,0.2)]
     "
       >
-        <img
-          className="h-[200px] w-full object-cover self-center"
-          src={item.image}
-          alt=""
-        />
+        <div className="w-full h-[200px] overflow-hidden rounded-md">
+          <img
+            className="h-full w-full object-cover transition-transform duration-500 ease-in-out hover:scale-110"
+            src={item.image}
+            alt=""
+          />
+        </div>
         <p className="font-bold text-2xl">{item.name}</p>
         <span className="text-xl text-gray-500 ">${item.price}</span>
       </div>
