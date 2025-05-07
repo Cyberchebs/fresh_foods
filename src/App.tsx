@@ -6,11 +6,13 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Checkout from "./pages/Checkout";
 import Details from "./pages/Details";
+import ScrollToTop from "./components/Scrolltotop";
 
 function App() {
   return (
     <div className="bg-white">
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/store" element={<Store />} />

@@ -33,7 +33,7 @@ const Details = () => {
     <div className="flex flex-col">
       <div className="flex flex-col md:flex-row lg:flex-row gap-5 p-7">
         <img
-          className="w-[500px] h-[500px] object-cover "
+          className="w-[500px] h-[300px]  object-cover "
           src={details?.image}
           alt=""
         />

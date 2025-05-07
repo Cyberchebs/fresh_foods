@@ -18,7 +18,7 @@ const Store = () => {
       <h1 className="text-6xl py-5">Store</h1>
       <div className="flex px-5 gap-10">
         <button
-          className={`px-4 py-2 rounded ${
+          className={`px-4 py-2 rounded cursor-pointer ${
             selectedCategory === "all"
               ? "bg-blue-500 text-white"
               : "bg-gray-200"
@@ -28,7 +28,7 @@ const Store = () => {
           all
         </button>
         <button
-          className={`px-4 py-2 rounded ${
+          className={`px-4 py-2 rounded cursor-pointer ${
             selectedCategory === "fruit"
               ? "bg-blue-500 text-white"
               : "bg-gray-200"
@@ -38,7 +38,7 @@ const Store = () => {
           fruits
         </button>
         <button
-          className={`px-4 py-2 rounded ${
+          className={`px-4 py-2 rounded cursor-pointer ${
             selectedCategory === "vegetable"
               ? "bg-blue-500 text-white"
               : "bg-gray-200"

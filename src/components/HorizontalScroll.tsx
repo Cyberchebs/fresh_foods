@@ -35,7 +35,7 @@ const HorizontalScroll: React.FC<Props> = ({ data }) => {
       {/* Scroll Left Button (Hidden on Mobile) */}
       <button
         onClick={() => scroll("left")}
-        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 hidden md:flex bg-gray-800 text-white p-2 rounded-full shadow-lg cursor-pointer"
+        className="absolute left-5 top-1/2 -translate-y-1/2 z-10 hidden md:flex bg-blue-500 text-white p-4 rounded-full shadow-lg cursor-pointer"
       >
         <FaArrowLeftLong />
       </button>
@@ -43,7 +43,7 @@ const HorizontalScroll: React.FC<Props> = ({ data }) => {
       {/* Scrollable Container */}
       <div
         ref={scrollRef}
-        className="flex flex-nowrap  overflow-x-scroll w-full  gap-x-6 p-3 hide-scrollbar mb-5   scroll-smooth"
+        className="flex flex-nowrap  overflow-x-scroll w-full  gap-x-6 p-4 hide-scrollbar mb-5   scroll-smooth"
       >
         {data?.slice(0, 6).map(item => (
           <div key={item.id}>
@@ -55,7 +55,7 @@ const HorizontalScroll: React.FC<Props> = ({ data }) => {
       {/* Scroll Right Button (Hidden on Mobile) */}
       <button
         onClick={() => scroll("right")}
-        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 hidden md:flex bg-gray-800 text-white p-2 rounded-full shadow-lg cursor-pointer"
+        className="absolute right-5 top-1/2 -translate-y-1/2 z-10 hidden md:flex bg-blue-500 text-white p-4 rounded-full shadow-lg cursor-pointer"
       >
         <FaArrowRightLong />
       </button>
