@@ -20,7 +20,7 @@ const ProductCard: React.FC<Props> = ({ item }) => {
   return (
     <Link to={`/details/${item.id}`}>
       <div
-        className="flex flex-col cusor-pointer items-start p-5  lg:w-[300px] md:w-auto md:min-w-[220px] w-[320px] h-[400px]  justify-evenly  shadow-gray-400 shadow-[0_10px_30px_rgba(0,0,0,0.2)]
+        className="flex flex-col cusor-pointer items-start p-5  lg:w-[300px]  md:min-w-[200px] md:w-[auto]   w-[300px] h-[400px]  justify-evenly  shadow-gray-400 shadow-[0_10px_30px_rgba(0,0,0,0.2)]
     "
       >
         <div className="w-full h-[200px] overflow-hidden rounded-md">

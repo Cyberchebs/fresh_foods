@@ -49,7 +49,7 @@ const Store = () => {
         </button>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 items-center justify-center mt-6 ipad-pro-only">
+      <div className="grid  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 items-center justify-center mt-6 ipad-pro-only">
         {filteredItems.map(item => (
           <div key={item.id}>
             <ProductCard item={item} />

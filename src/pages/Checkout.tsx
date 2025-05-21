@@ -16,9 +16,7 @@ const Checkout = () => {
         )}
       </div>
 
-      <div className="  flex flex-col items-center md:w-2/5 justify-center border-4 rounded-2xl border-gray-300 gap-4 max-h-[200px] ">
-        <h1 className="text-2xl self-start px-4 py-3 ">Cart Summary </h1>
-
+      <div className="  flex flex-col items-center md:w-2/5 justify-center border-4 rounded-2xl border-gray-300 gap-5 max-h-[200px] ">
         <span className="text-4xl">
           total: $
           {cartItems.reduce((total, cartItem) => {
@@ -26,13 +24,13 @@ const Checkout = () => {
             return total + (item?.price || 0) * cartItem.quantity;
           }, 0)}
         </span>
-        <div className="p-5 flex justify-between flex-row gap-10 ">
-          <span className="flex items-center justify-center  gap-2 text-2xl ">
+        <div className="p-5 flex justify-between flex-row gap-3 ">
+          <span className="flex items-center justify-center   text-xl ">
             {" "}
             free delivery
             <CiDeliveryTruck className="text-4xl" />
           </span>
-          <button className="bg-blue-400 w-[150px] h-[50px] cursor-pointer rounded-xl">
+          <button className="bg-blue-400 w-[150px] h-[50px] cursor-pointer rounded-xl hover:bg-blue-300">
             checkout
           </button>
         </div>
